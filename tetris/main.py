@@ -1,6 +1,6 @@
 from tkinter import *
-import random
 from common import *
+from action import *
 
 class Menu:
     def __init__(self, master):
@@ -63,10 +63,21 @@ class Menu:
 
       # 显示游戏界面
       self.gameFrame.pack()
-      self.master.title("开始游戏")
+      self.master.title("俄罗斯方块")
 
-      # 目前得分
-      scort = 0
+      # 初始化游戏状态
+      self.gameCanvas = Canvas(self.gameFrame, width=CANVAS_WIDTH, height=CANVAS_HEIGHT, bg="white")
+      self.gameCanvas.pack()
+
+      # 生成滑块
+      generatingSlider(self)
+
+      # 绑定键盘事件
+      self.master.bind("<Left>", lambda event: moveLeft(self))
+      self.master.bind("<Right>", lambda event: moveRight(self))
+      self.master.bind("<Down>", lambda event: moveDown(self))
+      self.master.bind("<space>", lambda event: snapDown(self))
+
 
     def setting(self):
       """设置游戏难度"""
