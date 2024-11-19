@@ -28,8 +28,13 @@
     - 所有活动可以筛选，搜索，分类以及加入社团
 - 数据库设计
   - 个人
-  ![image](https://github.com/user-attachments/assets/b3b8a0eb-f101-4f10-b837-f7315a67ba90)
+
+   ![image](https://github.com/user-attachments/assets/b3b8a0eb-f101-4f10-b837-f7315a67ba90)
+
   - 社团
+  
   ![image](https://github.com/user-attachments/assets/a59f0ce8-15fd-4e99-bd29-122f8f4242ae)
+
   - 活动
+  
   ![image](https://github.com/user-attachments/assets/5f399727-6a81-4f9c-a23d-b99ba654bf4c)
